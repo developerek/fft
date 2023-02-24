@@ -3,53 +3,52 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/nooncall/shazam)](https://goreportcard.com/report/github.com/nooncall/shazam)
 [![codecov](https://codecov.io/gh/nooncall/shazam/branch/master/graph/badge.svg)](https://codecov.io/gh/nooncall/shazam)
 
-## 简介
+## Introduction
 
-**shazam ([ʃə'zæm], 沙赞)是一款兼容MySQL协议的数据库中间件, 其前身是[Gaea](https://github.com/XiaoMi/Gaea).**
+**shazam ([ʃə'zæm], Shazam) is a database middleware compatible with MySQL protocol, its predecessor is [Gaea](https://github.com/XiaoMi/Gaea).**
 
-## 功能列表
+## function list
 
-### 基础功能
+### basic function
 
-- 多租户
-- SQL透明转发
-- 注解路由
-- SQL统计 (SQL指纹, 慢SQL日志等)
-- 读写分离，从库负载均衡
-- 自定义SQL拦截与过滤
-- 连接池
-- 配置热加载
-- IP/IP段白名单
-- 全局序列号
+- Multi-tenancy
+- SQL transparent forwarding
+- Annotate routing
+- SQL Statistics (SQL Fingerprint, Slow SQL Log, etc.)
+- Separation of reading and writing, load balancing from the library
+- Custom SQL interception and filtering
+- connection pool
+- Configure hot loading
+- IP/IP segment white list
+- Global serial number
 
-### 分库、分表功能
+### Sub-library, sub-table function
 
-- 分库: 支持mycat分库方式
-- 分表: 支持kingshard分表方式
-- 聚合函数: 支持max、min、sum、count、group by、order by等
-- join: 支持分片表和全局表的join、支持多个分片表但是路由规则相同的join
+- Sub-library: support mycat sub-library mode
+- Table splitting: support kingshard table splitting
+- Aggregation functions: support max, min, sum, count, group by, order by, etc.
+- join: supports the join of fragmented tables and global tables, supports the join of multiple fragmented tables but with the same routing rules
 
-## 安装使用
+## Install and use
 
-- [快速入门](docs/quickstart.md)
-- [配置说明](docs/configuration.md)
-- [基本概念](docs/concepts.md)
-- [SQL兼容性](docs/compatibility.md)
+- [Quickstart](docs/quickstart.md)
+- [Configuration instructions](docs/configuration.md)
+- [Basic concepts](docs/concepts.md)
+- [SQL Compatibility](docs/compatibility.md)
 - [FAQ](docs/faq.md)
 
-## 设计与实现
+## Design and implementation
 
-- [整体架构](docs/architecture.md)
-- [多租户的设计与实现](docs/multi-tenant.md)
-- [配置热加载设计与实现](docs/config-reloading.md)
-- [后端连接池的设计与实现](docs/connection-pool.md)
-- [prepare的设计与实现](docs/prepare.md)
+- [Overall Architecture](docs/architecture.md)
+- [Multi-tenant design and implementation](docs/multi-tenant.md)
+- [Configuration Hot Reloading Design and Implementation](docs/config-reloading.md)
+- [Design and implementation of backend connection pool](docs/connection-pool.md)
+- [Design and implementation of prepare](docs/prepare.md)
 
-## 社区
+## Community
 
-### 钉钉
+### DingTalk
 ![Dingtalk](docs/assets/shazam_dingtalk.png)
 
 ### gitter
 [![Gitter](https://badges.gitter.im/nooncall/shazam.svg)](https://gitter.im/nooncall/shazam)
-
